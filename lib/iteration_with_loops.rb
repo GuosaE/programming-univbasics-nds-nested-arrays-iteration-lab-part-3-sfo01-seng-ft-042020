@@ -8,7 +8,6 @@ def join_nested_strings(src)
     element_index = 0 
     while element_index < src[row_index].count do
         value << src[row_index].grep(String)
-        value.uniq
       element_index += 1 
     end
     row_index += 1

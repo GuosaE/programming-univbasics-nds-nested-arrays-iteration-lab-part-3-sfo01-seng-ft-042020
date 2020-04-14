@@ -7,9 +7,10 @@ def join_nested_strings(src)
   while row_index < src.count do
     element_index = 0 
     while element_index < src[row_index].count do
-        value << src[row_index].grep(String)
+      val = src[row_index][element_index].grep(String)
       element_index += 1 
     end
+    
     row_index += 1
   end
   value.join(" ")

@@ -10,7 +10,7 @@ def join_nested_strings(src)
       val = src[row_index][element_index].grep(String)
       element_index += 1 
     end
-    
+    val2 << val
     row_index += 1
   end
   value.join(" ")
